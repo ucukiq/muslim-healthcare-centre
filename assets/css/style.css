@@ -1,0 +1,52 @@
+/* Active state for navigation items */
+.navbar .nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link.active {
+    font-weight: 600;
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Add a small indicator for active links */
+.navbar .nav-link.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link.active:after {
+    width: 70%;
+}
+
+/* Hover effect */
+.navbar .nav-link:hover:not(.active) {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Improve spacing for icons */
+.navbar .nav-link i {
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Make the navbar more compact on mobile */
+@media (max-width: 991.98px) {
+    .navbar .nav-link {
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .navbar-collapse {
+        padding-top: 1rem;
+    }
+}

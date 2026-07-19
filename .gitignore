@@ -1,0 +1,23 @@
+# PHP
+/vendor/
+/node_modules/
+/.idea/
+/.vscode/
+/.env
+/.env.*
+/*.log
+/*.cache
+*.sqlite
+*.sqlite3
+# XAMPP / PHPStorm
+*.iml
+.DS_Store
+Thumbs.db
+
+# Composer
+composer.lock
+vendor/
+
+# Uploaded files
+assets/profile_pictures/
+assets/uploads/
